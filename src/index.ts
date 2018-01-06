@@ -1,1 +1,1 @@
-export { JwtHelperService } from './jwthelper.service';
+export * from './jwt-helper';

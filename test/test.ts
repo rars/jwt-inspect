@@ -1,5 +1,5 @@
-import "core-js/es";
-import "core-js/es/reflect";
+import 'core-js/es';
+import 'core-js/es/reflect';
 
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
 declare const __karma__: any;
@@ -10,7 +10,7 @@ __karma__.loaded = () => {};
 
 // require all files ending in '.spec.ts' from the
 // current directory and all subdirectories
-const testsContext = (require as any).context(".", true, /\.spec\.ts$/);
+const testsContext = (require as any).context('.', true, /\.spec\.ts$/);
 testsContext.keys().forEach(testsContext);
 
 __karma__.start();

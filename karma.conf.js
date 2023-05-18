@@ -1,3 +1,5 @@
+const path = require("path");
+
 //jshint strict: false
 module.exports = function (config) {
   config.set({
@@ -13,11 +15,14 @@ module.exports = function (config) {
       // karma watches the test entry points
       // webpack watches dependencies
       devtool: "inline-source-map",
+      output: {
+        path: path.join(__dirname, "temp"),
+      },
       resolve: {
         extensions: [".js", ".ts"],
       },
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.ts(x?)$/,
             loader: "ts-loader",
@@ -34,7 +39,7 @@ module.exports = function (config) {
       "text/x-typescript": ["ts", "tsx"],
     },
 
-    frameworks: ["jasmine"],
+    frameworks: ["jasmine", "webpack"],
 
     plugins: [
       "karma-chrome-launcher",

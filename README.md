@@ -1,5 +1,7 @@
 # jwt-inspect
 
+[![Node.js CI](https://github.com/rars/jwt-inspect/actions/workflows/node.js.yml/badge.svg)](https://github.com/rars/jwt-inspect/actions/workflows/node.js.yml)
+
 A pure TypeScript library for inspecting JWT tokens.
 
 ## Contributions welcome!

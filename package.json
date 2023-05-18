@@ -1,6 +1,6 @@
 {
   "name": "jwt-inspect",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A pure TypeScript library for inspecting JWT tokens.",
   "main": "jwt-inspect.bundle.js",
   "module": "jwt-inspect.module.js",
@@ -59,6 +59,12 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
     }
   }
 }
